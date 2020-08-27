@@ -1,4 +1,182 @@
 //Importing setup & variable partials
-@import "setup";
 @import "variables";
+@import "setup";
+@import "global-styles";
 
+//Header
+
+header {
+    background-image: url(./../assets/home-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    height: 90vh;
+
+    .mainTitle {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    h2 {
+        font-size: 16.6rem;
+        color: white;
+        text-align: center;
+        z-index: 1;
+            span {
+                color: $secondary-color;
+            }
+    }
+
+    .headerImage {
+        position: absolute;
+        top: 175px;
+        right: 0px;
+    }
+}
+
+//About
+.about {
+    background-color: $background-color;
+
+    .aboutSection {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        p {
+            margin: 25px 0;
+        }
+
+    h3 {
+       font-size: 5.63rem;
+       font-weight: 700;
+       letter-spacing: 1.3px;
+    }
+
+}
+
+//Workshops
+.workshopContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px 0;
+        
+        .image,
+        .content {
+            width: 40%;
+        }
+
+        .image1 {
+            transform: translate(-20px, -50px);
+            box-shadow: 25px 25px 0 0 $secondary-color;
+        }
+
+        .image2 {
+            box-shadow: -25px 25px 0 0 $secondary-color;
+            transform: translate(0px, 50px);
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding-bottom: 40px;
+        }
+
+        .box1 {
+            align-items: flex-start;
+
+                p {
+                    margin: 25px 0;
+                    width: 90%;
+                }
+        }
+
+        .box2 {
+            align-items: flex-end;
+            text-align: right;
+
+            p {
+                margin: 25px 0;
+                width: 90%;
+            }
+        }
+}
+
+//Links
+.pages {
+    background-color: $background-color;
+
+    .linkContainer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 100px 0;
+
+            .link {
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                margin-bottom: 50px;
+            }
+    }
+
+    .iconContainer {
+        background-color: $secondary-color;
+        display: inline-block;
+        border-radius: 50%;
+        padding: 15px;
+
+            i {
+                font-size: 30px;
+            }
+    }
+    
+    .textContainer {
+        width: 80%;
+
+            p {
+                margin: 10px 0;
+            }
+    }
+}
+
+//Founder
+.founder {
+    background-color: $background-color;
+
+        .founderContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 80px 0;
+        }
+
+            .headshot {
+                width: 20%;
+                box-shadow: 25px 20px 0 0 $secondary-color;
+            }
+
+            .description {
+                width: 70%;
+            }
+
+            .description > p {
+                margin: 20px 0;
+            }
+}
+
+//Gallery
+.galleryContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}

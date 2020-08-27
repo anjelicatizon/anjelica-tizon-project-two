@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planted Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="wrapper">
+            <div class="topNav">
+                <!-- Logo -->
+                <h1>Planted</h1>
+
+                <!-- Nav -->
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <h5>Blog</h5>
+    </header>
+
+    <main>
+
+        <!-- Blog Post -->
+        <section class="blog">
+            <div class="blogImage">
+                <img src="./assets/post-image.jpg" alt="A close up of succulent leaves on a light green background">
+            </div>
+
+            <div class="post">
+                <h4>Our mission at Planted</h4>
+
+                <p><em>Monday January 21st, 2019 by <strong>Yousra</strong></em></p> <!-- Double check if strong is the right tag -->
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, eius ratione. Omnis mollitia deleniti soluta explicabo dicta ex? Blanditiis obcaecati est consequatur iure aspernatur incidunt doloremque accusamus cumque consectetur error.</p>
+                
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae doloremque est nemo rem incidunt, repellat debitis excepturi aliquid sunt tempora minima id dolores, ea exercitationem nobis fugit deleniti accusamus dignissimos natus architecto? Pariatur, temporibus? Incidunt magnam voluptatibus deserunt repellendus consectetur!</p>
+                
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia laudantium sequi possimus voluptatibus. Error quidem quod vitae natus aspernatur aut nihil consequuntur expedita totam magnam laborum officiis alias dolorum sequi a possimus neque explicabo, veniam omnis consequatur saepe. Hic fugit, beatae consequuntur, sequi nulla accusantium quos impedit atque inventore explicabo porro error, aliquid soluta ab sit dolore dicta distinctio ut.</p>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit libero eaque consequuntur animi ducimus, quis facilis dignissimos eos quaerat! Quibusdam aliquam ex vel harum labore?</p>
+            </div>
+        </section>
+
+        <!-- Comments -->
+        <section class="comments">
+            <h4>Comments:</h4>
+
+            <!-- First comment -->
+            <div class="comment">
+                <img src="./assets/profile-image.jpg" alt="A headshot of a person in front of pink flowers">
+
+                <p class="commentInfo">
+                    Tuesday October 9th, 2018 by Jeremy
+                </p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque saepe, reprehenderit nihil animi repudiandae incidunt aliquam minima at deserunt distinctio vel doloribus aperiam voluptatum error.</p>
+            </div>
+
+            <!-- Second comment -->
+            <div class="comment">
+                <img src="./assets/profile-image-2.jpg" alt="A headshot of a person with a black hat with a dark background">
+
+                <p class="commentInfo">
+                    Wednesday October 10th, 2018 by Julia
+                </p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque saepe, reprehenderit nihil animi repudiandae incidunt aliquam minima at deserunt distinctio vel doloribus aperiam voluptatum error.</p>
+            </div>
+
+            <!-- Comment Form -->
+            <form action="#">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name">
+    
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="Email address">
+    
+                <label for="message">Comment</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required maxlength="255"></textarea>
+    
+                <input type="submit" value="Post Comment">
+            </form>
+
+        </section>
+
+        <!-- Aside -->
+        <aside>
+            <img src="./assets/side-bar-image.jpg" alt="An old, brown, wooden window inset in a stone wall">
+
+            <div class="textContainer">
+                <p class="asideTitle">About Planted</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, expedita. <em><strong>Find out more.</strong></em></p>
+
+                <p class="asideTitle">Recent Posts</p>
+
+                <ul>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Consectetur adipisicing elit</li>
+                    <li>Quis magnam assumenda fugit</li>
+                    <li>Porro minus aliquam incidunt</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Copyright © 2018 HackerYou</p>
+        <p>Created at <a href="https://junocollege.com/">Juno College</a></p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,94 @@
+//Global Styling
+html {
+    font-size: 62.5%;
+    font-family: $main-font;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+        &:hover,
+        &:focus {
+            color: $secondary-color;
+        }
+        &:active {
+            color: $secondary-color;
+        }
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 5.63rem;
+    font-weight: 400;
+    color: white;
+    line-height: 37px;
+}
+
+h4 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h5 {
+    font-size: 4.2rem;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: $secondary-font;
+    font-size: 2rem;
+    line-height: 32px;
+}
+
+.greenButton {
+    display: inline-block;
+    background-color: $main-color;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+//Wrapper
+.wrapper {
+    max-width: 1250px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+//Top Nav Styles
+header {
+    .topNav {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin-right: 40px;
+            &:first-child {
+                margin-left: 40px;
+            }
+    }
+}
+
+//Footer Styles
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
