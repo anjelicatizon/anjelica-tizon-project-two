@@ -84,6 +84,54 @@ header {
     }
 }
 
+//Form - Base Style
+form {
+    background-color: white;
+    font-family: $secondary-font;
+    font-size: 2rem;
+    line-height: 32px;
+    width: 850px;
+
+        fieldset {
+            border: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        input[type=text], 
+        input[type=email] {
+        height: 30px;
+        padding: 20px 20px;
+        margin: 10px 10px;
+        border: 0;
+        border-bottom: 1px solid $main-color;
+        width: calc(50% - 20px);
+        }
+
+        textarea {
+            border: 0;
+            border: 1px solid $main-color;
+            resize: none;
+            width: 100%;
+            margin: 20px 0;
+            padding: 20px 20px;
+        }
+
+        button[type=submit]{
+            background-color: $main-color;
+            border:none;
+            color:white;
+            padding:10px 20px;
+            margin: 0 auto;
+            width: 100%;
+            font-family: $main-font;
+            font-size: 3.2rem;
+            letter-spacing: 1px;
+          }
+}
+
 //Footer Styles
 
 footer {

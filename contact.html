@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planted Contact</title>
     <script src="https://kit.fontawesome.com/58ab0192c3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     
-    <!-- Nav -->
-    <header>
-        <div class="wrapper">
-            <div class="topNav">
-                <!-- Logo -->
-                <h1>Planted</h1>
+    <header class="contact">
+        <!-- Nav -->
+        <div class="headerContainer contactHeader">
+            <div class="wrapper">
+                <nav class="topNav">
+                    <!-- Logo -->
+                    <h1>Planted</h1>
 
-                <!-- Nav -->
-                <nav>
+                    <!-- Nav -->
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -26,45 +27,59 @@
                     </ul>
                 </nav>
             </div>
+        </div>
 
-            <h5>Get in Touch</h5>
+        <!-- Headline -->
+        <div class="wrapper">
+            <div class="headline">
+                <h5>Get in Touch</h5>
+            </div>
         </div>
     </header>
 
     <main>
         <!-- Form -->
-        <div class="contactForm">
-            <form action="#">
+        <div class="wrapper">
+            <div class="formContainer">
+                <form action="#" class="contactForm">
+                    <fieldset class="personalInfo">
+                        <!-- Name -->
+                        <label for="name" class="visuallyHidden">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
 
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name">
+                        <!-- Email -->
+                        <label for="email" class="visuallyHidden">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email address">
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Email address">
+                        <!-- Message -->
+                        <label for="message" class="visuallyHidden">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required maxlength="255"></textarea>
 
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required maxlength="255"></textarea>
-
-            <input type="submit" value="Submit">
-            </form>
+                        <!-- Submit -->
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
         </div>
 
         <!-- Contact Info -->
         <section class="contactInfo">
+            <div class="wrapper">
             
-            <div class="socials">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fas fa-phone-alt"></i>
-            </div>
+                <div class="socials">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-phone-alt"></i>
+                </div>
 
-            <div class="contactDetails">
-                <a href="#">info@email.com</a> <!-- Is there a way to make this a mail:to link? -->
-                <p>123 - 456 -7890</p>
-                <p>123 Queen Street West, Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V 2D5</p>
+                <div class="contactDetails">
+                    <a href="#">info@email.com</a> <!-- Is there a way to make this a mail:to link? -->
+                    <p>123 - 456 -7890</p>
+                    <p>123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V 2D5</p>
+                </div>
             </div>
         </section>
     </main>
