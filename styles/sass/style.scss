@@ -3,7 +3,9 @@
 @import "setup";
 @import "global-styles";
 
-// ** HOME PAGE **
+/*********************/
+/*     HOME PAGE     */
+/*********************/
 
 //Header
 header {
@@ -186,7 +188,9 @@ header {
     padding: 80px 0;
 }
 
-// ** CONTACT PAGE **
+/*********************/
+/*   CONTACT PAGE    */
+/*********************/
 
 // Header
 .contact {
@@ -257,7 +261,9 @@ header {
     }
 }
 
-// ** BLOG **
+/*********************/
+/*        BLOG       */
+/*********************/
 
 // Header
 .blog {
@@ -292,7 +298,7 @@ header {
 .blogContainer {
     display: flex;
     justify-content: space-between;
-    padding: 60px 0 0 0;
+    padding: 60px 20px 0 0;
     background-color: $background-color;
     position: relative;
 
@@ -337,7 +343,7 @@ header {
         margin-left: 25px;
         position: relative;
         top: -250px;
-        right: 0;
+        right: -20px;
 
         .blogImage {
             box-shadow: -20px 20px 0 0 $secondary-color;
@@ -385,6 +391,7 @@ header {
 
     form {
         margin-top: 40px;
+        padding-right: 40px;
         background-color: $background-color;
 
             input[type=text],
@@ -398,3 +405,9 @@ header {
             }
     }
 }
+
+/*********************/
+/*   MEDIA QUERIES   */
+/*********************/
+
+@import "media-queries";

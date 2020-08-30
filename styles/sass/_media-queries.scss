@@ -1,0 +1,55 @@
+/*********************/
+/*   MEDIA QUERIES   */
+/*********************/
+
+@media (max-width: 1280px) {
+
+    // Home Page
+    .workshopContainer {
+        padding: 0;
+        align-items: center;
+
+        .image {
+            width: 50%;
+        }
+
+        .image1 {
+            transform: translate(0, 0);
+            box-shadow: none;
+        }
+
+        .image2 {
+            transform: translate(0, 0);
+            box-shadow: none;
+        }
+    }
+}
+
+@media (max-width: 1070px) {
+    .workshopContainer {
+
+        .image {
+            width: 100%;
+
+                img {
+                    width: 100%;
+                }
+        }
+        
+        .content {
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        .box1 {
+            align-items: center;
+            text-align: center;
+        }
+
+        .box2 {
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
+
