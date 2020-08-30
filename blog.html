@@ -9,14 +9,14 @@
 </head>
 <body>
 
-    <header>
-        <div class="wrapper">
-            <div class="topNav">
-                <!-- Logo -->
-                <h1>Planted</h1>
+    <header class="blog">
+        <div class="headerContainer blogHeader">
+            <div class="wrapper">
+                <nav class="topNav">
+                    <!-- Logo -->
+                    <h1>Planted</h1>
 
-                <!-- Nav -->
-                <nav>
+                    <!-- Nav -->
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -25,95 +25,111 @@
                     </ul>
                 </nav>
             </div>
-
         </div>
-        <h5>Blog</h5>
+
+        <!-- Headline -->
+        <div class="wrapper">
+            <div class="headline">
+                <h5>Blog</h5>
+            </div>
+        </div>
     </header>
 
     <main>
+        <div class="blogContainer"> <!-- Flex Parent -->
+            
+            <!-- Aside - Flex Child of .blog Container + Flex Parent -->
+            <aside>
+                <img src="./assets/side-bar-image.jpg" alt="An old, brown, wooden window inset in a stone wall">
 
-        <!-- Blog Post -->
-        <section class="blog">
-            <div class="blogImage">
-                <img src="./assets/post-image.jpg" alt="A close up of succulent leaves on a light green background">
-            </div>
+                <div class="textContainer">
+                    <h4>About Planted</h4>
 
-            <div class="post">
-                <h4>Our mission at Planted</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, expedita. <em><strong>Find out more.</strong></em></p>
 
-                <p><em>Monday January 21st, 2019 by <strong>Yousra</strong></em></p> <!-- Double check if strong is the right tag -->
+                    <h4>Recent Posts</h4>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, eius ratione. Omnis mollitia deleniti soluta explicabo dicta ex? Blanditiis obcaecati est consequatur iure aspernatur incidunt doloremque accusamus cumque consectetur error.</p>
-                
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae doloremque est nemo rem incidunt, repellat debitis excepturi aliquid sunt tempora minima id dolores, ea exercitationem nobis fugit deleniti accusamus dignissimos natus architecto? Pariatur, temporibus? Incidunt magnam voluptatibus deserunt repellendus consectetur!</p>
-                
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia laudantium sequi possimus voluptatibus. Error quidem quod vitae natus aspernatur aut nihil consequuntur expedita totam magnam laborum officiis alias dolorum sequi a possimus neque explicabo, veniam omnis consequatur saepe. Hic fugit, beatae consequuntur, sequi nulla accusantium quos impedit atque inventore explicabo porro error, aliquid soluta ab sit dolore dicta distinctio ut.</p>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit libero eaque consequuntur animi ducimus, quis facilis dignissimos eos quaerat! Quibusdam aliquam ex vel harum labore?</p>
-            </div>
-        </section>
+                    <ul>
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Consectetur adipisicing elit</li>
+                        <li>Quis magnam assumenda fugit</li>
+                        <li>Porro minus aliquam incidunt</li>
+                    </ul>
+                </div>
+            </aside>
 
-        <!-- Comments -->
-        <section class="comments">
-            <h4>Comments:</h4>
+            <!-- Blog Post - Flex Child of .blog Container + Flex Parent-->
+            <section class="blogContent">
+                <div class="blogImage">
+                    <img src="./assets/post-image.jpg" alt="A close up of succulent leaves on a light green background">
+                </div>
 
-            <!-- First comment -->
-            <div class="comment">
-                <img src="./assets/profile-image.jpg" alt="A headshot of a person in front of pink flowers">
+                <div class="post"> <!-- Flex Child -->
+                    <h4>Our mission at Planted</h4>
 
-                <p class="commentInfo">
-                    Tuesday October 9th, 2018 by Jeremy
-                </p>
+                    <p class="date"><em>Monday January 21st, 2019 by <strong>Yousra</strong></em></p> <!-- Double check if strong is the right tag -->
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque saepe, reprehenderit nihil animi repudiandae incidunt aliquam minima at deserunt distinctio vel doloribus aperiam voluptatum error.</p>
-            </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, eius ratione. Omnis mollitia deleniti soluta explicabo dicta ex? Blanditiis obcaecati est consequatur iure aspernatur incidunt doloremque accusamus cumque consectetur error.</p>
+                    
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae doloremque est nemo rem incidunt, repellat debitis excepturi aliquid sunt tempora minima id dolores, ea exercitationem nobis fugit deleniti accusamus dignissimos natus architecto? Pariatur, temporibus? Incidunt magnam voluptatibus deserunt repellendus consectetur!</p>
+                    
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia laudantium sequi possimus voluptatibus. Error quidem quod vitae natus aspernatur aut nihil consequuntur expedita totam magnam laborum officiis alias dolorum sequi a possimus neque explicabo, veniam omnis consequatur saepe. Hic fugit, beatae consequuntur, sequi nulla accusantium quos impedit atque inventore explicabo porro error, aliquid soluta ab sit dolore dicta distinctio ut.</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit libero eaque consequuntur animi ducimus, quis facilis dignissimos eos quaerat! Quibusdam aliquam ex vel harum labore?</p>
+                </div>
 
-            <!-- Second comment -->
-            <div class="comment">
-                <img src="./assets/profile-image-2.jpg" alt="A headshot of a person with a black hat with a dark background">
+                <div class="comments"> <!-- Flex child -->
+                    <h4>Comments:</h4>
 
-                <p class="commentInfo">
-                    Wednesday October 10th, 2018 by Julia
-                </p>
+                    <!-- First comment -->
+                    <div class="comment">
+                        <div class="imageCol">
+                            <img src="./assets/profile-image.jpg" alt="A headshot of a person in front of pink flowers">
+                        </div>
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque saepe, reprehenderit nihil animi repudiandae incidunt aliquam minima at deserunt distinctio vel doloribus aperiam voluptatum error.</p>
-            </div>
+                        <div class="commentCol">
+                            <p>
+                                Tuesday October 9th, 2018 by Jeremy
+                            </p>
 
-            <!-- Comment Form -->
-            <form action="#">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Name">
-    
-                <label for="email">Email address</label>
-                <input type="email" id="email" name="email" placeholder="Email address">
-    
-                <label for="message">Comment</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required maxlength="255"></textarea>
-    
-                <input type="submit" value="Post Comment">
-            </form>
+                            <div class="commentContent">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque saepe, reprehenderit nihil animi repudiandae incidunt aliquam minima at deserunt distinctio vel doloribus aperiam 
+                            </div>
+                        </div>
+                    </div>
 
-        </section>
+                    <!-- Second comment -->
+                    <div class="comment">
+                        <div class="imageCol">
+                            <img src="./assets/profile-image-2.jpg" alt="A headshot of a person in front of pink flowers">
+                        </div>
 
-        <!-- Aside -->
-        <aside>
-            <img src="./assets/side-bar-image.jpg" alt="An old, brown, wooden window inset in a stone wall">
+                        <div class="commentCol">
+                            <p>
+                                Tuesday October 9th, 2018 by Jeremy
+                            </p>
 
-            <div class="textContainer">
-                <p class="asideTitle">About Planted</p>
+                            <div class="commentContent">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque saepe, reprehenderit nihil animi repudiandae incidunt aliquam minima at deserunt distinctio vel doloribus aperiam 
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, expedita. <em><strong>Find out more.</strong></em></p>
-
-                <p class="asideTitle">Recent Posts</p>
-
-                <ul>
-                    <li>Lorem ipsum dolor sit</li>
-                    <li>Consectetur adipisicing elit</li>
-                    <li>Quis magnam assumenda fugit</li>
-                    <li>Porro minus aliquam incidunt</li>
-                </ul>
-            </div>
-        </aside>
+                <form action="#"> <!-- Comment - Flex Child -->
+                    <label for="name" class="visuallyHidden">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+        
+                    <label for="email" class="visuallyHidden">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="Email address">
+        
+                    <label for="message" class="visuallyHidden">Comment</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" required maxlength="255"></textarea>
+        
+                    <button type="submit">Post Comment</button>
+                </form>
+            </section>    
+        </div> 
     </main>
 
     <footer>
