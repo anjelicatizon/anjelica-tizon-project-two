@@ -248,6 +248,16 @@ header {
             font-size: 30px;
             color: $main-color;
         }
+
+        i:hover,
+        i:focus {
+            color: darken($main-color, 20)
+        }
+
+        a:hover,
+        a:focus {
+            color: darken($main-color, 20)
+        }
     
     .contactDetails {
 
